@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+header {
+    background-image: url(./images/DSC00638.JPG);
+    background-size: 100% 100%;
+    padding-bottom: 35px;
+    color: #3d738c;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
