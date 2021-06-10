@@ -1,22 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Montserrat, sans-serif;
     background-color: whitesmoke;
     
 }
 
-header {
+#banner {
     background-image: url(./images/DSC00638.JPG);
     background-size: 100% 100%;
-    padding-bottom: 35px;
+    height: 220px;
+    
+}
+
+#banner .content h1 {
     color: #3d738c;
-    font-size: 25px;
+    font-family: "Fugaz One", cursive;
+    font-size: 50px;
+    position: relative;
+    top: 35px;
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
+    border: 5px double white;
+    border-radius: 60px 5px;
+    padding: 0px 15px;
+    opacity: 70%;
+    background-color: rgba(220, 232, 248, 0.5);
 }
 
 p {
-    text-align: center;
+    text-align: justify;
+    margin: 0px 100px;
 }
 
 h2 {
     text-align: center;
+    margin: 35px;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    
+
+}
+
+h3 {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+#nav {
+    text-align: center;
+    margin-top: 35px;
 }
