@@ -33,27 +33,53 @@ body {
     background-color: rgba(220, 232, 248, 0.5);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 5%;
+    align-items: baseline;
+}
+
+.about {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    clear: none;
+}
+
 p {
     text-align: justify;
-    margin: 0px 100px;
+    line-height: 2;
 }
 
 h2 {
+    width: fit-content;
     text-align: center;
-    margin: 35px;
+    margin: 20px auto;
     text-transform: uppercase;
     border-bottom: 2px solid;
     padding-bottom: 10px;
-    
-
 }
 
 h3 {
-    margin: 20px 10px;
+    margin: 0 auto;
     text-align: center;
 }
 
-#nav {
+#link-container {
     text-align: center;
-    margin-top: 35px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.links a {
+    padding: 10px;
 }
