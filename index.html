@@ -34,9 +34,13 @@
         </main>
     </body>
     <script>
-        first = prompt("Please, enter your first name!");
-        document.getElementById('firstname').innerHTML = first;
-        if (first = " ") {
+        let first = prompt("Please, enter your first name!");
+        if (first === "") {
+            let second = prompt("Sorry, didn't catch your name! Could you type it again?");
+            document.getElementById('firstname').innerHTML = second;
+        } else if (first) {
+            document.getElementById('firstname').innerHTML = first;
+        } else {
             document.getElementById('firstname').innerHTML = "friend";
         }
     </script>
