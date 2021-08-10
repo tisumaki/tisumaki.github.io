@@ -16,7 +16,7 @@
         <main>
             <section class="about">
                 <h2>About me</h2>
-                <p>Welcome to my digital portfolio! My name is Tiia Mäkelä and I'm currently based in Turku, Finland. 
+                <p>Welcome to my digital portfolio, <span id="firstname"></span>! My name is Tiia Mäkelä and I'm currently based in Turku, Finland. 
                     I have a Master's Degree in Spanish and I specialized in language teaching and learning. 
                     In other words, I'm a language teacher and one of my main interests was (and still is) how to efficiently integrate technology into the classroom and how to properly utilize the new technologies to make teaching and learning: 1) more fun and diversified and 2) easier and less time-consuming.
                     <br><br>
@@ -33,4 +33,11 @@
             </section>
         </main>
     </body>
+    <script>
+        first = prompt("Please, enter your first name!");
+        document.getElementById('firstname').innerHTML = first;
+        if (first = " ") {
+            document.getElementById('firstname').innerHTML = "friend";
+        }
+    </script>
 </html>
