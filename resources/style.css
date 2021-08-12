@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: Montserrat, sans-serif;
     background-color: whitesmoke;
@@ -13,7 +17,7 @@ body {
 #banner {
     background-image: url(./images/DSC00638.JPG);
     background-size: 100% 100%;
-    height: 220px;
+    height: 18rem;
     
 }
 
@@ -22,29 +26,47 @@ body {
     font-family: "Fugaz One", cursive;
     font-size: 50px;
     position: relative;
-    top: 35px;
+    top: 4.25rem;
     width: 500px;
     margin: 0 auto;
     text-align: center;
     border: 5px double white;
     border-radius: 60px 5px;
     padding: 0px 15px;
-    opacity: 70%;
     background-color: rgba(220, 232, 248, 0.5);
 }
 
-main {
+nav {
+    height: 3.5rem;
     display: flex;
-    flex-wrap: wrap;
-    margin: 3% 5%;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(13, 48, 75, 0.85);
 }
 
-.about {
-    width: 50%;
+nav a {
+    color: rgb(230, 230, 230);
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 196, 34);
+}
+
+main {
+    margin: 3% 5%;
+}
+
+.about-container {
     display: flex;
-    flex-wrap: wrap;
-    clear: none;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-text-container {
+    width: 50%;
 }
 
 p {
@@ -52,7 +74,7 @@ p {
     line-height: 2;
 }
 
-h2 {
+#about h2 {
     width: fit-content;
     text-align: center;
     margin: 20px auto;
@@ -61,25 +83,47 @@ h2 {
     padding-bottom: 10px;
 }
 
-h3 {
-    margin: 0 auto;
-    text-align: center;
+#about img {
+    display: flex;
+    max-width: 30%;
+    border-radius: 10% 10%;
+    position: relative;
+    top: 1.5rem;
 }
 
 #link-container {
-    text-align: center;
-    margin: 35px auto;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    margin: 3.5rem auto;
 }
 
 .links {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    align-items: flex-start;
 }
 
 .links a {
-    padding: 10px;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    color:rgb(13, 48, 75)
+
+}
+.links a:hover {
+    color:rgb(255, 196, 34);
+}
+
+.contact-container h2 {
+    margin: 1rem auto;
+}
+
+.contact-text {
+    display: flex;
+    height: 6.5rem;
+    padding: 1rem;
+    align-items: flex-end;
+}
+
+.contact-text img {
+    width: 100%;
+    padding: 1rem;
 }

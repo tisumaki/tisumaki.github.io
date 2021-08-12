@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Digital portfolio | Tiia Mäkelä</title>
         <link href="./resources/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,35 +14,48 @@
                 <h1>Digital portfolio Tiia Mäkelä</h1>
             </div>
         </div>
+
+        <nav>
+            <a href=#about>About me</a>
+            <a href=#link-container>Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
         <main>
-            <section class="about">
-                <h2>About me</h2>
-                <p>Welcome to my digital portfolio, <span id="firstname"></span>! My name is Tiia Mäkelä and I'm currently based in Turku, Finland. 
-                    I have a Master's Degree in Spanish and I specialized in language teaching and learning. 
-                    In other words, I'm a language teacher and one of my main interests was (and still is) how to efficiently integrate technology into the classroom and how to properly utilize the new technologies to make teaching and learning: 1) more fun and diversified and 2) easier and less time-consuming.
-                    <br><br>
-                    At the moment, I'm studying Full Stack Development with the help of Codecademy and hoping that I could turn my passion for technology into a career: who knows, maybe there's a way to combine my teacher education and my newly acquired coding skills at some point in the future!
-                    On this page, I've gathered some of the coding projects I've previously made: including some Codecademy practice projects. This portfolio is slowly but steadily growing and I'm excited to learn and experiment more!</p>
+            <section id="about">
+                <div class="about-container">
+                    <div class="about-text-container">
+                        <h2>About me</h2>
+                        <p>Welcome to my digital portfolio! My name is Tiia Mäkelä and I'm currently based in Turku, Finland. 
+                        I have a Master's Degree in Spanish and I specialized in language teaching and learning. 
+                        In other words, I'm a language teacher and one of my main interests was (and still is) how to efficiently integrate technology into the classroom and how to properly utilize the new technologies to make teaching and learning: 1) more fun and diversified and 2) easier and less time-consuming.
+                        <br><br>
+                        At the moment, I'm studying Full Stack Development with the help of Codecademy and hoping that I could turn my passion for technology into a career: who knows, maybe there's a way to combine my teacher education and my newly acquired coding skills at some point in the future!
+                        On this page, I've gathered some of the coding projects I've previously made: including some Codecademy practice projects. This portfolio is slowly but steadily growing and I'm excited to learn and experiment more!
+                        <br><br>
+                        <script>
+                            function changeBanner(){
+                              const p = document.getElementById("banner");
+                              p.style.backgroundImage = "url('resources/images/IMG_20210715_220053-PANO.jpg')";
+                            }
+                        </script>
+                        Click <strong><a href=# id=change-banner onclick="changeBanner()">here</strong></a> to change the banner image!</p>
+                    </div>
+                    <img src="./resources/images/IMG_20210429_013453.jpg">
+                </div>
             </section>
+
             <section id="link-container">
-                <h3>Links to my projects</h3>
+                <h3>Links to my projects (opens in a new tab)</h3>
                 <div class="links">
-                    <a href="https://tisumaki.github.io/excursion/">Excursion Website Project</a>
-                    <a href="https://tisumaki.github.io/the-lit-company/">The Lit Company | CSS Flexbox Practice</a>
-                    <a href="https://tisumaki.github.io/east-london-mystery-club/">East London Mystery Club | Responsive Website Design</a>
+                    <a href="https://tisumaki.github.io/excursion/" target="_blank">Excursion Website Project</a>
+                    <a href="https://tisumaki.github.io/the-lit-company/" target="_blank">The Lit Company | CSS Flexbox Practice</a>
+                    <a href="https://tisumaki.github.io/east-london-mystery-club/" target="_blank">East London Mystery Club | Responsive Website Design</a>
                 </div>
             </section>
         </main>
     </body>
     <script>
-        let first = prompt("Please, enter your first name!");
-        if (first === "") {
-            let second = prompt("Sorry, didn't catch your name! Could you type it again?");
-            document.getElementById('firstname').innerHTML = second;
-        } else if (first) {
-            document.getElementById('firstname').innerHTML = first;
-        } else {
-            document.getElementById('firstname').innerHTML = "friend";
-        }
+        
     </script>
 </html>
