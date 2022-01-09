@@ -11,7 +11,9 @@ html {
 body {
     font-family: Montserrat, sans-serif;
     background-color: whitesmoke;
-    
+    opacity: 0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s;
 }
 
 
@@ -28,7 +30,7 @@ body {
     font-size: 3.5vw;
     position: relative;
     top: 3.5rem;
-    width: 40vw;
+    width: 45vw;
     margin: 0 auto;
     text-align: center;
     border: 5px double white;
@@ -47,30 +49,32 @@ nav {
 nav a {
     color: rgb(230, 230, 230);
     font-size: 1.25rem;
-    font-weight: bolder;
     text-decoration: none;
-    font-style: italic;
+    transition: font-style;
 }
 
 a:hover {
     color: rgb(255, 196, 34);
+    font-style: italic;
 }
 
 main {
     margin: 3% 5%;
 }
 
+
 .about-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin: 2em 0;
-    
+  
 }
+
 
 .about-text-container {
     width: 50%;
-    border: double;
+    border: double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
@@ -100,6 +104,8 @@ p {
 
 #link-container {
     margin: 3rem auto;
+    border: double rgb(255, 196, 34);
+    padding: 2rem 2.5rem;
 }
 
 .links {
