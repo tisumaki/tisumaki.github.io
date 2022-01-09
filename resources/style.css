@@ -18,7 +18,7 @@ body {
 #banner {
     background-image: url(./images/DSC00638.JPG);
     background-size: 100% 100%;
-    height: 50vh;
+    height: 15rem;
     
 }
 
@@ -27,7 +27,7 @@ body {
     font-family: "Fugaz One", cursive;
     font-size: 3.5vw;
     position: relative;
-    top: 13vh;
+    top: 3.5rem;
     width: 40vw;
     margin: 0 auto;
     text-align: center;
@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-    height: 6vw;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -141,24 +141,56 @@ p {
     padding: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .about-container {
         display:inline-block;
     }
     .about-text-container {
         width: 100%;
+        margin: 2rem auto;
     }
 
     #about img {
         position: relative;
         left: 30vw;
-    }
-
-    nav {
-        height: 8vw;
+        margin: 1rem 0;
+        
     }
 
     #link-container {
         margin: 2rem auto;
+    }
+
+    .contact-container h1 {
+        font-size: 1.75em;
+    }
+
+    .contact-container h2 {
+        font-size: 1em;
+        margin-top: 1rem;
+    }
+
+    .contact-text {
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .contact-text img {
+        padding: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav a {
+        font-size: 1rem;
+    }
+    
+    #banner {
+        height: 10rem;
+    }
+
+    #banner .content h1 {
+        top: 3rem;
     }
 }
