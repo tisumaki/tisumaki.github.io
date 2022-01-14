@@ -74,7 +74,7 @@ main {
 
 .about-text-container {
     width: 50%;
-    border: double rgb(255, 196, 34);
+    border: 4px double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
