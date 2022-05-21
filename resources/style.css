@@ -5,17 +5,17 @@
 }
 
 html {
-    font-size: calc(12px + 0.5vw)
+    font-size: calc(12px + 0.5vw);
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Montserrat, sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(255, 254, 193);
     opacity: 0;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
 }
-
 
 #banner {
     background-image: url(./images/DSC00638.JPG);
@@ -38,12 +38,30 @@ body {
     background-color: rgba(220, 232, 248, 0.75);
 }
 
-nav {
-    height: 6rem;
+.nav-container {
+    height: 4rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(13, 48, 75, 0.85);
+    background-color: rgb(13, 48, 75);
+}
+
+.nav-container-fixed {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(13, 48, 75);
+    z-index: 999;
+    position: fixed;
+    top: -50%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 nav a {
@@ -55,25 +73,25 @@ nav a {
 
 a:hover {
     color: rgb(255, 196, 34);
-    font-style: italic;
 }
 
 main {
     margin: 3% 5%;
 }
 
+section {
+    background-color: white;
+}
+
 
 .about-container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    margin: 2em 0;
-  
+    justify-content: space-between;  
 }
 
-
 .about-text-container {
-    width: 50%;
+    width: 100%;
     border: double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
@@ -81,6 +99,10 @@ main {
 p {
     text-align: justify;
     line-height: 2;
+}
+
+#about {
+    margin: 5em 0;
 }
 
 #about h2 {
@@ -93,13 +115,15 @@ p {
     margin-bottom: 1.75em;
 }
 
-#about img {
-    display: flex;
-    max-width: 33%;
-    border-radius: 10% 10%;
-    position: relative;
-    top: 1.5rem;
-    
+#profile-pic {
+    text-align: center;
+    margin: 5em;
+}
+
+#profile-pic img {
+    width: 20em;
+    border-radius: 10% 10%; 
+    border: double rgb(255, 196, 34);
 }
 
 #link-container {
@@ -148,20 +172,6 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
-    .about-container {
-        display:inline-block;
-    }
-    .about-text-container {
-        width: 100%;
-        margin: 2rem auto;
-    }
-
-    #about img {
-        position: relative;
-        left: 30vw;
-        margin: 1rem 0;
-        
-    }
 
     #link-container {
         margin: 2rem auto;
