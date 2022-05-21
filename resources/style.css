@@ -128,7 +128,7 @@ p {
 
 #link-container {
     margin: 3rem auto;
-    border: double rgb(255, 196, 34);
+    border: 4px double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
@@ -197,7 +197,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     nav a {
         font-size: 1rem;
     }
