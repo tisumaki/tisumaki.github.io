@@ -4,17 +4,27 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-size: calc(12px + 0.5vw);
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    background-color: rgb(255, 254, 193);
+    font-family: Lato, sans-serif;
     opacity: 0;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
+}
+
+#content {
+    background-image: url(./images/drawing-gd6d58d2a9_1920.jpg);
+    background-size: cover;
+}
+
+section h2, nav a {
+    font-family: "Arvo", serif;
+    letter-spacing: 1px;
 }
 
 #banner {
@@ -38,7 +48,7 @@ body {
     background-color: rgba(220, 232, 248, 0.75);
 }
 
-.nav-container {
+.nav-container, footer {
     height: 4rem;
     width: 100%;
     display: flex;
@@ -92,7 +102,7 @@ section {
 
 .about-text-container {
     width: 100%;
-    border: double rgb(255, 196, 34);
+    border: 5px double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
@@ -121,9 +131,8 @@ p {
 }
 
 #profile-pic img {
-    width: 20em;
-    border-radius: 10% 10%; 
-    border: double rgb(255, 196, 34);
+    width: 20em; 
+    border: 5px double rgb(255, 196, 34);
 }
 
 #link-container {
@@ -147,6 +156,13 @@ p {
 }
 .links a:hover {
     color:rgb(255, 196, 34);
+}
+
+footer {
+    font-size: 0.85em;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 .contact-container {
