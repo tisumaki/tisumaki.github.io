@@ -169,6 +169,7 @@ footer {
     margin: 2rem;
     padding: 2rem;
     border: dotted;
+    background-color: darkgrey;
 }
 
 .contact-container h2 {
@@ -224,5 +225,9 @@ footer {
 
     #banner .content h1 {
         top: 3rem;
+    }
+
+    #profile-pic {
+        margin: 2em;
     }
 }
