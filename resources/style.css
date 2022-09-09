@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: "Lato", sans-serif;
     opacity: 0;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
@@ -23,7 +23,7 @@ body {
 }
 
 section h2, nav a {
-    font-family: "Arvo", serif;
+    font-family: "Quicksand", sans-serif;
     letter-spacing: 1px;
 }
 
@@ -37,16 +37,18 @@ section h2, nav a {
 #banner .content h1 {
     color: #3d738c;
     font-family: "Fugaz One", cursive;
-    font-size: 3.5vw;
+    font-size: 4vw;
+    font-weight: lighter;
     position: relative;
-    top: 3.5rem;
+    top: 3rem;
     width: 45vw;
     margin: 0 auto;
     text-align: center;
     border: 5px double white;
-    border-radius: 60px 5px;
+    border-radius: 1.5em;
     background-color: rgba(220, 232, 248, 0.75);
 }
+
 
 .nav-container, footer {
     height: 4rem;
@@ -159,21 +161,37 @@ p {
 }
 
 footer {
+    text-align: center;
     font-size: 0.85em;
     color: white;
     font-weight: lighter;
     letter-spacing: 1px;
 }
 
+#main-footer p {
+    margin-left: auto;
+}
+
+#main-footer img {
+    margin-left: auto;
+    padding-right: 1.5em;
+}
+
+#main-footer img:hover {
+    cursor: pointer;
+}
+
 .contact-container {
     margin: 2rem;
     padding: 2rem;
     border: dotted;
-    background-color: darkgrey;
+    background-color: rgb(213, 224, 253);
+    text-align: center;
 }
 
 .contact-container h2 {
     margin: 1rem auto;
+    font-size: 1.25em;
 }
 
 .contact-text {
@@ -181,6 +199,7 @@ footer {
     height: 6.5rem;
     padding: 1rem;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .contact-text img {
