@@ -40,14 +40,14 @@
         <main>
             <section id="about">
                 <div class="about-container">
-                    <div class="about-text-container">
+                    <div class="about-text-container bordered">
                         <h2>About me</h2>
                         <p>Welcome to my digital portfolio! My name is Tiia Mäkelä and I'm currently based in Turku, Finland. 
                         I have a Master's Degree in Spanish and I specialized in language teaching and learning. 
                         Basically, I'm a language teacher with a passion for technology and one of my main interests was (and still is) how to efficiently integrate technology into the classroom and how to properly utilize new technologies: firstly, to make teaching and learning more fun and diversified and secondly, to ease the learning and teaching processes.
                         More recently, I've become intrigued by data analytics and how one can study and display data in a coherent and clear manner so it can be further utilized in all sorts of ways. I'm truly eager to learn more about it since managing data and searching for causations are things I enjoy doing.
                         <br><br>
-                        At the moment, I'm studying Full Stack Development with the help of Codecademy and hoping that I could turn my interest in technology into a career: who knows, maybe there's a way to combine my teacher education and my newly acquired coding skills at some point in the future!
+                        <span class="more">At the moment, I'm studying Full Stack Development with the help of Codecademy and hoping that I could turn my interest in technology into a career: who knows, maybe there's a way to combine my teacher education and my newly acquired coding skills at some point in the future!
                         On this page, I've gathered some of the coding projects I've previously made: including some Codecademy practice projects. This portfolio is slowly but steadily growing and I'm excited to learn and experiment more!
                         <br><br>
                         <script>
@@ -56,16 +56,17 @@
                               p.style.backgroundImage = "url('resources/images/IMG_20210715_220053-PANO.jpg')";
                             }
                         </script>
-                        Click <strong><a href=# id=change-banner onclick="changeBanner()">here</strong></a> to change the banner image!</p>
+                        Click <strong><a href=# id=change-banner onclick="changeBanner()">here</strong></a> to change the banner image!</span></p>
+                        <button>Show more</button>
                     </div>
                 </div>
             </section>
 
             <div id="profile-pic">
-                <img src="./resources/images/IMG_20210429_013453.jpg">
+                <img class="bordered" src="./resources/images/IMG_20210429_013453.jpg">
             </div>
 
-            <section id="link-container">
+            <section id="link-container" class="bordered">
                 <h3>Links to my projects <span class="material-icons" style="font-size:18px">open_in_new</span></h3>
                 <div class="links">
                     <a href="https://tisumaki.github.io/excursion/" target="_blank">Excursion Website Project</a>

@@ -19,7 +19,7 @@ body {
 
 #content {
     background-image: url(./images/drawing-gd6d58d2a9_1920.jpg);
-    background-size: cover;
+    background-size:contain;
 }
 
 section h2, nav a {
@@ -80,7 +80,7 @@ nav a {
     color: rgb(230, 230, 230);
     font-size: 1.25rem;
     text-decoration: none;
-    transition: font-style;
+    transition: color 0.5s;
 }
 
 a:hover {
@@ -95,6 +95,9 @@ section {
     background-color: white;
 }
 
+.bordered {
+    border: 5px double rgb(255, 196, 34);
+}
 
 .about-container {
     display: flex;
@@ -104,7 +107,6 @@ section {
 
 .about-text-container {
     width: 100%;
-    border: 5px double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
@@ -127,6 +129,23 @@ p {
     margin-bottom: 1.75em;
 }
 
+button {
+    float: right;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: rgb(255, 196, 34);
+    border: none;
+    outline: none;
+    padding: 1em;
+    margin-top: 1em;
+    
+}
+
+.more {
+    display: none;
+}
+
 #profile-pic {
     text-align: center;
     margin: 5em;
@@ -134,12 +153,10 @@ p {
 
 #profile-pic img {
     width: 20em; 
-    border: 5px double rgb(255, 196, 34);
 }
 
 #link-container {
     margin: 3rem auto;
-    border: 4px double rgb(255, 196, 34);
     padding: 2rem 2.5rem;
 }
 
@@ -153,7 +170,8 @@ p {
     margin-top: 1rem;
     padding: 0.5rem 0;
     font-weight: bold;
-    color:rgb(13, 48, 75)
+    color:rgb(13, 48, 75);
+    transition: color 0.5s;
 
 }
 .links a:hover {
@@ -185,7 +203,7 @@ footer {
     margin: 2rem;
     padding: 2rem;
     border: dotted;
-    background-color: rgb(213, 224, 253);
+    background-color: rgb(230 234 243);
     text-align: center;
 }
 
@@ -248,5 +266,11 @@ footer {
 
     #profile-pic {
         margin: 2em;
+    }
+
+    button {
+        padding: 0.75em;
+        margin-top: 1.5em;
+        font-size: smaller;
     }
 }
