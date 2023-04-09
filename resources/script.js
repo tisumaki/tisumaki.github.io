@@ -18,9 +18,7 @@ $(document).ready(function() {
             $(this).text('Show less');
             $(".more").css('display', '');
         } else {
-            $('html,body').animate({
-                scrollTop: $("#about").offset().top -50},
-                200);
+            $('html,body').scrollTop($("#about").offset().top -60);
             $(this).text('Show more');
         }
     })

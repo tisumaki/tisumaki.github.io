@@ -35,7 +35,7 @@ section h2, nav a {
 }
 
 #banner .content h1 {
-    color: #3d738c;
+    color: #4493b8;
     font-family: "Fugaz One", cursive;
     font-size: 4vw;
     font-weight: lighter;
@@ -45,7 +45,7 @@ section h2, nav a {
     margin: 0 auto;
     text-align: center;
     border: 5px double white;
-    border-radius: 1.5em;
+    border-radius: 0.25em;
     background-color: rgba(220, 232, 248, 0.75);
 }
 
@@ -56,7 +56,7 @@ section h2, nav a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(13, 48, 75);
+    background-color: rgb(5, 47, 95);
 }
 
 .nav-container-fixed {
@@ -65,7 +65,7 @@ section h2, nav a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(13, 48, 75);
+    background-color: rgb(5, 47, 95);
     z-index: 999;
     position: fixed;
     top: -50%;
@@ -84,7 +84,7 @@ nav a {
 }
 
 a:hover {
-    color: rgb(255, 196, 34);
+    color: rgb(241, 162, 8);
 }
 
 main {
@@ -96,7 +96,7 @@ section {
 }
 
 .bordered {
-    border: 5px double rgb(255, 196, 34);
+    border: 5px double rgb(241, 162, 8);
 }
 
 .about-container {
@@ -134,12 +134,15 @@ button {
     font-family: "Quicksand", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: rgb(255, 196, 34);
+    background-color: rgb(241, 162, 8);
     border: none;
     outline: none;
     padding: 1em;
     margin-top: 1em;
-    
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .more {
@@ -170,12 +173,12 @@ button {
     margin-top: 1rem;
     padding: 0.5rem 0;
     font-weight: bold;
-    color:rgb(13, 48, 75);
+    color:rgb(5, 47, 95);
     transition: color 0.5s;
 
 }
 .links a:hover {
-    color:rgb(255, 196, 34);
+    color:rgb(241, 162, 8);
 }
 
 footer {
