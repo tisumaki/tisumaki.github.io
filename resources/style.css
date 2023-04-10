@@ -39,6 +39,7 @@ section h2, nav a {
     font-family: "Fugaz One", cursive;
     font-size: 4vw;
     font-weight: lighter;
+    text-shadow: 2px 2px 0px #303030;
     position: relative;
     top: 3rem;
     width: 45vw;

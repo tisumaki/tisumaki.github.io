@@ -1,4 +1,4 @@
-$("document").ready(function($){
+$(document).ready(function($){
     var nav = $('.nav-container-fixed');
   
     $(window).scroll(function () {
@@ -23,3 +23,13 @@ $(document).ready(function() {
         }
     })
 });
+
+toggle = true;
+function changeBanner(){
+    const p = document.getElementById("banner");
+    toggle = !toggle;
+    if(toggle) {
+        p.style.backgroundImage = "url('resources/images/DSC00638.JPG')";
+    } else {
+        p.style.backgroundImage = "url('resources/images/IMG_20210715_220053-PANO.jpg')"
+}};
