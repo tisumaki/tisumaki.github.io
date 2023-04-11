@@ -266,6 +266,7 @@ footer {
 
     #banner .content h1 {
         top: 3rem;
+        text-shadow: 1px 1px 0px #303030;
     }
 
     #profile-pic {
